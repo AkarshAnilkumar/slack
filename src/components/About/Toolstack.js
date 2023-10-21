@@ -7,24 +7,31 @@ import {
   SiVercel,
   SiMacos,
 } from "react-icons/si";
+import {BsGlobe2} from "react-icons/bs";
+import {BsAndroid} from "react-icons/bs";
+import {FaRobot} from "react-icons/fa";
+import {IoLogoGoogle} from "react-icons/io";
+import {CgFigma} from "react-icons/cg";
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "50px", }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <BsGlobe2 />
+        <br />
+        <p style={{ fontSize: "0.25em", paddingBottom: "10px" }}>Web <br/> Development</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <BsAndroid />
+        <p style={{ fontSize: "0.25em", paddingBottom: "20px" }}>App <br/>Development</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <FaRobot />
+        <p style={{ fontSize: "0.25em", paddingBottom: "20px" }}>AI & ML <br/> Development</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <CgFigma />
+        <p style={{ fontSize: "0.25em", paddingBottom: "20px" }}>UI/UX <br/> Designing</p>
       </Col>
     </Row>
   );
