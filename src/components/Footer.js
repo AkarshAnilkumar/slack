@@ -1,15 +1,17 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <Container fluid className="footer">
       <Row>
@@ -20,48 +22,9 @@ function Footer() {
           <h3>Copyright © {year} [company shortname] </h3>
         </Col>
         <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="#"
-                style={{ color: "white" }}
-                target="_self" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="#"
-                style={{ color: "white" }}
-                target="_self" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="#"
-                style={{ color: "white" }}
-                target="_self" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="#"
-                style={{ color: "white" }}
-                target="_self" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-          </ul>
+          <Button variant="dark" onClick={scrollToTop}>
+            Back to Top
+          </Button>
         </Col>
       </Row>
     </Container>
