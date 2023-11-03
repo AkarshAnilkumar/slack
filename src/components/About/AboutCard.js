@@ -20,7 +20,7 @@ function AboutCard() {
           </p>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Believe in Faith, enjoy the vibe!"{" "}
+            "Live in the moment"{" "}
           </p>
           <footer className="blockquote-footer">Kalidas Vijaybhak</footer>
         </blockquote>
