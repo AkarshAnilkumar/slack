@@ -22,7 +22,7 @@ function Footer() {
           <h3>Copyright © {year} [company shortname] </h3>
         </Col>
         <Col md="4" className="footer-body">
-          <Button variant="dark" onClick={scrollToTop}>
+          <Button variant="dark " onClick={scrollToTop}>
             Back to Top
           </Button>
         </Col>
