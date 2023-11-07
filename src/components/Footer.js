@@ -16,10 +16,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Developed by [company name]</h3>
+          {/* <h3>Developed by [company name]</h3> */}
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} [company shortname] </h3>
+          <h3>Copyright © {year} | Hexacode </h3>
         </Col>
         <Col md="4" className="footer-body">
           <Button variant="dark " onClick={scrollToTop}>

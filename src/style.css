@@ -413,7 +413,8 @@ button:focus {
 
 .footer-body {
   z-index: 1;
-  text-align: center !important;
+
+  text-align: right !important;
 }
 
 @media (max-width: 767px) {
@@ -740,4 +741,23 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* Style for the Back to Top button */
+.back-to-top-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: none;
+}
+
+.visible {
+  display: block;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+
+  .back-to-top-btn {
+    text-align: center !important;
+  }
 }
